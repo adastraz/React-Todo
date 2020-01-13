@@ -27,6 +27,15 @@ class App extends Component {
       })
     })
   }
+  clearDone = () => {
+    // console.log(id)
+    this.setState({
+      todoList: this.state.todoList.filter(id => {
+        return id.completed !== true
+        
+      })
+    })
+  }
   addItem = itemName => {
     const newItem = {
       name: itemName,
@@ -45,6 +54,7 @@ class App extends Component {
         <TodoList 
         todos={this.state.todoList} 
         toggleItem={this.toggleItem}
+        clearDone={this.clearDone}
         />
       </div>
     );
