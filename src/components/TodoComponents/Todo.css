@@ -1,0 +1,15 @@
+.App {
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    
+}
+.completed {
+    background-color:red
+}
+
+button{
+    background: skyblue;
+    color: purple;
+}
